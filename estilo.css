@@ -1,21 +1,25 @@
-body{
-     color: white;
-    font-family: 'Roboto';  
+body {
+    color: white;
+    font-family: 'Roboto';
 }
 
-.container-form{
+.container-form {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, red, rgb(63, 63, 224));
     flex-direction: column;
-    padding-bottom:  40px;
+    padding-bottom: 40px;
 }
 
 .titulo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
+    text-shadow: 2px 3px 4px black;
+    color: white;
+    font-family: 'Lobster Two', sans-serif;
+
 }
 
 .container {
@@ -40,10 +44,11 @@ input {
     min-height: 30px;
 }
 
-.interacao{
+.interacao {
     transition: transform 0.5s ease;
 }
-.interacao:focus-visible{
+
+.interacao:focus-visible {
     transform: translateY(-5px);
 }
 
@@ -60,9 +65,10 @@ input[type="submit"]:hover {
     font-size: 15px;
     transform: translateY(5px);
     cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.container-tabela{
+
+.container-tabela {
     background: linear-gradient(to bottom, green, yellow);
     display: flex;
     color: black;
@@ -80,15 +86,17 @@ table {
 }
 
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px 15px;
     transition: background-color 0.5s ease, transform 0.5s ease;
-    }
+}
 
 
-    th:hover, td:hover{
-        background-color: rgb(255, 247, 0);
-        transform: translateX(-5px);
-        transition: 0.5s;
-    }
+th:hover,
+td:hover {
+    background-color: rgb(255, 247, 0);
+    transform: translateX(-5px);
+    transition: 0.5s;
+}
