@@ -1,0 +1,94 @@
+body{
+     color: white;
+    font-family: 'Roboto';  
+}
+
+.container-form{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, red, rgb(63, 63, 224));
+    flex-direction: column;
+    padding-bottom:  40px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(3, 38, 107);
+    min-height: 150px;
+    padding: 25px;
+    border-radius: 5px;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    min-width: 300px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    min-height: 30px;
+}
+
+.interacao{
+    transition: transform 0.5s ease;
+}
+.interacao:focus-visible{
+    transform: translateY(-5px);
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(to top, rgb(62, 77, 244), rgb(142, 12, 12));
+    color: white;
+    margin: auto;
+    transition: 0.5s ease;
+}
+
+input[type="submit"]:hover {
+    font-size: 15px;
+    transform: translateY(5px);
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.container-tabela{
+    background: linear-gradient(to bottom, green, yellow);
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    min-height: 400px;
+    font-size: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, grey, rgb(0, 255, 76));
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+
+    th:hover, td:hover{
+        background-color: rgb(255, 247, 0);
+        transform: translateX(-5px);
+        transition: 0.5s;
+    }
