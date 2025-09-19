@@ -9,8 +9,8 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, red, rgb(63, 63, 224));
-    flex-direction: column;
     padding-bottom: 40px;
+    flex-direction: row;
 }
 
 .titulo {
